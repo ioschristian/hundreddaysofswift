@@ -99,14 +99,13 @@ for i in 1...100_000 {
 print(multiples)
 
 
-
 for i in 1...100 {
-    if i % 3 == 0 {
-        print("Fuck")
-    } else if i % 5 == 0 {
-        print("Suck a duck")
-    } else if i % 3 == 0 && i % 5 == 0 {
-        print("Fuck and Suck a Duck")
+    if i % 3 == 0 && i % 5 == 0{
+        print("FizzBuzz")
+    } else if i % 3 == 0 {
+        print("Fizz")
+    } else if i % 5 == 0{
+        print("Buzz")
     } else {
         print(i)
     }
