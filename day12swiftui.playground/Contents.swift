@@ -71,3 +71,23 @@ class Car: Vehicle {
     }
     
 }
+
+let teslaX = Car(isElectric: true, isConvertible: false)
+
+// How to copy classes
+class User {
+    var username = "Anonymous"
+}
+
+var user1 = User()
+
+var user2 = user1
+user2.username = "Taylor"
+
+print(user1.username)
+print(user2.username)
+
+// How to create a deinitializer for a class
+
+
+
