@@ -8,19 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingAlert = false
+    
     var body: some View {
-        ZStack {
-            VStack(spacing: 0) {
-                Color.red
-                Color.blue
-            }
-            Text("Your content")
-                .foregroundColor(.secondary)
-                .padding(50)
-                .background(.ultraThinMaterial)
+        Button("Show Alert") {
+            showingAlert = true
         }
-        .ignoresSafeArea()
-        
+        .alert("Important message", isPresented: $showingAlert) {
+            Button("OK") {}
+        }
     }
 }
 
